@@ -26,8 +26,10 @@ django-cute-status
     :alt: licence
 
 
-Return a more fun and cute picture to your users based upon the HTTP response codes.
+Return a more fun and cute animal picture to your users based upon the HTTP response codes.
 
+Demo Responses
+--------------
 Some of these responses may look like:
 
 - **404(Resource not found)**
