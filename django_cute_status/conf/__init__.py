@@ -13,6 +13,8 @@ class LazySettings(LazyObject):
 DEPRECATED_SETTINGS = {
     'USE_TZ' if django.VERSION > (4, 0) else None,
     'PASSWORD_RESET_TIMEOUT_DAYS' if django.VERSION > (3, 0) else None,
+    'DEFAULT_CONTENT_TYPE' if django.VERSION > (2, 2) else None,
+    'FILE_CHARSET' if django.VERSION > (2, 2) else None,
 }
 
 
