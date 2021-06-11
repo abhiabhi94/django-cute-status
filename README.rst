@@ -30,14 +30,12 @@ Return a more fun and cute picture to your users based upon the HTTP response co
 
 Some of these responses may look like:
 
-- 404(Resource not found)
------------------------
+- **404(Resource not found)**
 
 .. image:: https://raw.githubusercontent.com/abhiabhi94/django-cute-status/main/img/404-dog.jpg
     :alt: Resource not found.
 
-- 400(Bad request)
-----------------
+- **400(Bad request)**
 
 .. image:: https://raw.githubusercontent.com/abhiabhi94/django-cute-status/main/img/400-cat.jpg
     :alt: Bad request.
