@@ -11,7 +11,7 @@ django-cute-status
 
 .. image:: https://badge.fury.io/py/django-cute-status.svg
     :target: https://pypi.org/project/django-cute-status/
-    :alt: Latest PyPi version
+    :alt: Latest PyPI version
 
 .. image:: https://img.shields.io/pypi/pyversions/django-cute-status.svg
     :target: https://pypi.python.org/pypi/django-cute-status/
@@ -30,14 +30,14 @@ Return a more fun and cute picture to your users based upon the HTTP response co
 
 Some of these responses may look like:
 
-404(Resource not found)
-````````````````````````
+- 404(Resource not found)
+-----------------------
 
 .. image:: https://raw.githubusercontent.com/abhiabhi94/django-cute-status/main/img/404-dog.jpg
     :alt: Resource not found.
 
-400(Bad request)
-`````````````````
+- 400(Bad request)
+----------------
 
 .. image:: https://raw.githubusercontent.com/abhiabhi94/django-cute-status/main/img/400-cat.jpg
     :alt: Bad request.
@@ -143,17 +143,12 @@ Whether to add the ``CUTE_STATUS_HEADER`` on all HTTP requests or not. Defaults 
 
 
 Credits
-~~~~~~~~
-The application wouldn't have been possible without the excellent pictures served by https://httpstatusdogs.com and https://http.cat. Many thanks to them for their cute pictures.
-
-
-Credits
-~~~~~~~~
+-------
 The application wouldn't have been possible without the excellent pictures served by https://httpstatusdogs.com and https://http.cat. Many thanks to them for their cute pictures.
 
 
 Development
-~~~~~~~~~~~~
+-----------
 For setting up development environment, you may see the guidelines at `CONTRIBUTING.rst`_.
 
 .. _CONTRIBUTING.rst: https://github.com/abhiabhi94/django-cute-status/tree/main/CONTRIBUTING.rst
