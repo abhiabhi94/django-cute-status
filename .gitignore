@@ -1,0 +1,22 @@
+*.py[cod]
+*.egg-info
+
+# distribution
+build
+dist
+
+# tox and coverage stuff
+.tox
+.coverage*
+coverage*
+
+# virtual environment
+*venv*
+
+# editor files
+.idea
+.vscode
+*.swp
+
+# database
+*db.sqlite*

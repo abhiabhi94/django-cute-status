@@ -1,0 +1,13 @@
+global-exclude *.py[cod]
+prune __pycache__
+include LICENSE
+include README.rst
+include pyproject.toml
+include CHANGELOG.rst
+recursive-include django_cute_status/locale *
+recursive-include django_cute_status/templates *
+prune tests
+exclude tox.ini
+exclude .pre-commit-config.yaml
+exclude codecov.yml
+exclude CONTRIBUTING.rst
