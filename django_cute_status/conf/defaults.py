@@ -3,7 +3,7 @@ import os
 
 
 CUTE_STATUS_BASE_URLS = (
-    'https://httpstatusdogs.com/img/{status_code}.jpg',
+    'https://http.dog/{status_code}.jpg',
     'https://http.cat/{status_code}.jpg',
 )
 
