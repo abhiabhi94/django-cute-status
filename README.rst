@@ -34,7 +34,7 @@ Some of these responses may look like:
 
 - **404(Resource not found)**
 
-.. image:: https://raw.githubusercontent.com/abhiabhi94/django-cute-status/main/img/404-dog.jpg
+.. image:: https://http.dog/404.jpg
     :alt: Resource not found.
 
 - **400(Bad request)**
@@ -102,7 +102,7 @@ Defaults to :
 .. code:: python
 
      = (
-        'https://httpstatusdogs.com/img/{status_code}.jpg',
+        'https://http.dog/{status_code}.jpg',
         'https://http.cat/{status_code}.jpg',
     )
 
@@ -144,7 +144,7 @@ Whether to add the ``CUTE_STATUS_HEADER`` on all HTTP requests or not. Defaults 
 
 Credits
 -------
-The application wouldn't have been possible without the excellent pictures served by https://httpstatusdogs.com and https://http.cat. Many thanks to them for their cute pictures.
+The application wouldn't have been possible without the excellent pictures served by https://http.dog and https://http.cat. Many thanks to them for their cute pictures.
 
 
 Development
