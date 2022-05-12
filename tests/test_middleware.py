@@ -16,7 +16,7 @@ def test_header_override_all(client, monkeypatch):
 
     assert response.status_code == 200
     assert response.has_header('X-Cute-Status') is True
-    assert response['X-Cute-Status'] == 'https://httpstatusdogs.com/img/200.jpg'
+    assert response['X-Cute-Status'] == 'https://http.dog/200.jpg'
 
 
 def test_not_allowed_codes(client, monkeypatch):
@@ -34,7 +34,7 @@ def test_random_disabled(client, monkeypatch):
     assert response.status_code == 400
     assert response.has_header('X-Cute-Status') is True
     # this is the default url to be used
-    assert response['X-Cute-Status'] == 'https://httpstatusdogs.com/img/400.jpg'
+    assert response['X-Cute-Status'] == 'https://http.dog/400.jpg'
 
 
 def test_allowed_code(client, monkeypatch):
@@ -44,9 +44,9 @@ def test_allowed_code(client, monkeypatch):
 
     assert response.status_code == 400
     assert response.has_header('X-Cute-Status') is True
-    assert response['X-Cute-Status'] == 'https://httpstatusdogs.com/img/400.jpg'
+    assert response['X-Cute-Status'] == 'https://http.dog/400.jpg'
 
-    assert response.context['cute_status_url'] == 'https://httpstatusdogs.com/img/400.jpg'
+    assert response.context['cute_status_url'] == 'https://http.dog/400.jpg'
 
 
 def test_base_template_does_not_exist(client, monkeypatch):
