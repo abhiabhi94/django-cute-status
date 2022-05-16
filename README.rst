@@ -102,7 +102,7 @@ Defaults to :
 .. code:: python
 
      = (
-        'https://httpstatusdogs.com/img/{status_code}.jpg',
+        'https://http.dog/{status_code}.jpg',
         'https://http.cat/{status_code}.jpg',
     )
 
@@ -124,12 +124,12 @@ This tells whether to display cute statuses using one of the available URLs rand
 
 ``CUTE_STATUS_FOR_CODES``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-This a list of status code for which cute status will be displayed. Defaults to ``(204, 400, 401, 402, 403, 404, 500)``.
+This a list of status code for which cute status will be displayed. Defaults to ``(204, 400, 401, 402, 403, 404, 405, 429, 500, 501, 502, 503, 504)``.
 
 
 ``CUTE_STATUS_NOT_FOR_CODES``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is a list of status code for which cute status will not be displayed. You may want to display text as per you business logic. Defaults to ``(200, 201, 301, 302)``.
+This is a list of status code for which cute status will not be displayed. You may want to display text as per you business logic. Defaults to ``(200, 201, 301, 302, 307, 308)``.
 
 
 ``CUTE_STATUS_HEADER``
@@ -144,7 +144,7 @@ Whether to add the ``CUTE_STATUS_HEADER`` on all HTTP requests or not. Defaults 
 
 Credits
 -------
-The application wouldn't have been possible without the excellent pictures served by https://httpstatusdogs.com and https://http.cat. Many thanks to them for their cute pictures.
+The application wouldn't have been possible without the excellent pictures served by https://http.dog and https://http.cat. Many thanks to them for their cute pictures.
 
 
 Development

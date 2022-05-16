@@ -3,7 +3,7 @@ import os
 
 
 CUTE_STATUS_BASE_URLS = (
-    'https://httpstatusdogs.com/img/{status_code}.jpg',
+    'https://http.dog/{status_code}.jpg',
     'https://http.cat/{status_code}.jpg',
 )
 
@@ -18,7 +18,13 @@ CUTE_STATUS_FOR_CODES = (
     402,
     403,
     404,
+    405,
+    429,
     500,
+    501,
+    502,
+    503,
+    504,
 )
 
 CUTE_STATUS_NOT_FOR_CODES = (
@@ -26,6 +32,8 @@ CUTE_STATUS_NOT_FOR_CODES = (
     201,
     301,
     302,
+    307,
+    308,
 )
 
 CUTE_STATUS_HEADER = 'X-Cute-Status'
