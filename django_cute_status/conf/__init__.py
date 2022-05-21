@@ -15,6 +15,7 @@ DEPRECATED_SETTINGS = {
     'PASSWORD_RESET_TIMEOUT_DAYS' if django.VERSION > (3, 0) else None,
     'DEFAULT_CONTENT_TYPE' if django.VERSION > (2, 2) else None,
     'FILE_CHARSET' if django.VERSION > (2, 2) else None,
+    'USE_L10N' if django.VERSION > (4, 0) else None,
 }
 
 
