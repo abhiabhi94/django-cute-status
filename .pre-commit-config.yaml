@@ -19,7 +19,7 @@ repos:
         - flake8-bugbear
 
 -   repo: https://github.com/asottile/reorder_python_imports
-    rev: v3.1.0
+    rev: v3.3.0
     hooks:
     -   id: reorder-python-imports
         args: ['--application-directories=.:django_status_dogs:tests']
