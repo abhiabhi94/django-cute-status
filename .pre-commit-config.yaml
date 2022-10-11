@@ -19,13 +19,13 @@ repos:
         - flake8-bugbear
 
 -   repo: https://github.com/asottile/reorder_python_imports
-    rev: v3.8.3
+    rev: v3.8.4
     hooks:
     -   id: reorder-python-imports
         args: ['--application-directories=.:django_status_dogs:tests']
 
 -   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.981
+    rev: v0.982
     hooks:
     -   id: mypy
         exclude: test*|migrations*
