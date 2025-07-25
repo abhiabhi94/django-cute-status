@@ -25,13 +25,13 @@ class CuteStatusMiddleware:
             return render(
                 request,
                 settings.CUTE_STATUS_BASE_TEMPLATE,
-                {'cute_status_url': self._get_url(status_code)},
+                {"cute_status_url": self._get_url(status_code)},
                 status=status_code,
             )
         except TemplateDoesNotExist:
             raise ImproperlyConfigured(
                 _(
-                    'Django Cute Status: The base template for cute status '
+                    "Django Cute Status: The base template for cute status "
                     f'"{settings.CUTE_STATUS_BASE_TEMPLATE}" does not exist.'
                 )
             )
@@ -41,9 +41,9 @@ class CuteStatusMiddleware:
         status_code = response.status_code
 
         if (
-            settings.CUTE_STATUS_OVERRIDE_HEADER_ON_ALL or
-            status_code in settings.CUTE_STATUS_FOR_CODES or
-            status_code not in settings.CUTE_STATUS_NOT_FOR_CODES
+            settings.CUTE_STATUS_OVERRIDE_HEADER_ON_ALL
+            or status_code in settings.CUTE_STATUS_FOR_CODES
+            or status_code not in settings.CUTE_STATUS_NOT_FOR_CODES
         ):
             response = self._get_response(request, status_code)
             # header is added after rendering response because the renderer overrides the header.
