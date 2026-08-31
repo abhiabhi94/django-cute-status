@@ -1,7 +1,6 @@
 # this is added here for easy override to a new vendor in case this service is no longer available
 import os
 
-
 CUTE_STATUS_BASE_URLS = (
     "https://http.dog/{status_code}.jpg",
     "https://http.cat/{status_code}.jpg",
