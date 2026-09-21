@@ -5,7 +5,6 @@ from tests.views import http_400
 from tests.views import http_401
 from tests.views import http_500
 
-
 app_name = "tests"
 
 urlpatterns = [
