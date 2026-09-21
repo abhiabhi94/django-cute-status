@@ -1,6 +1,5 @@
 import os.path
 
-
 BASE_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "django_cute_status"
 )
